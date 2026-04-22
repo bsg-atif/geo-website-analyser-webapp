@@ -17,9 +17,8 @@ export default function URLInput({ initialURL = "" }) {
     const params = new URLSearchParams();
     params.set("url", url);
 
-    router.push(`/dashboard?${params.toString()}`);
-
     console.log(url);
+    return router.push(`/dashboard?${params.toString()}`);
   };
 
   useEffect(() => {
@@ -48,7 +47,10 @@ export default function URLInput({ initialURL = "" }) {
           id="url"
         />
       </div>
-      <button className="bg-neutral-0 p-4 grow text-neutral-900 font-bold rounded-2xl flex gap-x-2 justify-center items-center">
+      <button
+        type="submit"
+        className="bg-neutral-0 p-4 grow text-neutral-900 font-bold rounded-2xl flex gap-x-2 justify-center items-center"
+      >
         Analyse Website <MoveRight size={18} strokeWidth={2} />
       </button>
     </form>
