@@ -1,0 +1,14 @@
+.section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: hsl(var(--secondary-300) / 0.4);
+  filter: blur(210px);
+}

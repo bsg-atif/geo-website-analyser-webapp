@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "src",
+    "paths": {
+      "@features/*": ["features/*"],
+      "@utils/*": ["utils/*"],
+      "@shared/*": ["shared/*"],
+      "@constants/*": ["constants/*"],
+      "@pages/*": ["pages/*"]
+    }
+  }
+}

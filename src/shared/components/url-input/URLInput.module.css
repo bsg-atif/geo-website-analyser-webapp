@@ -1,0 +1,9 @@
+.inputWrapper {
+  box-shadow: 0 0 10px hsla(var(--accent-500) / 0.4);
+  transition: box-shadow;
+  transition-duration: 1000ms;
+}
+
+.inputWrapper:focus-within {
+  box-shadow: 0 0 100px hsla(var(--accent-500) / 0.4);
+}

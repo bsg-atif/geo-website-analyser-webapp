@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Logo";
+  src:
+    url("/fonts/orbitron-logo.woff2") format("woff2"),
+    url("/fonts/orbitron-logo.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@theme {
+  --color-neutral-0: hsl(var(--neutral-0));
+  --color-neutral-50: hsl(var(--neutral-50));
+  --color-neutral-100: hsl(var(--neutral-100));
+  --color-neutral-200: hsl(var(--neutral-200));
+  --color-neutral-500: hsl(var(--neutral-500));
+  --color-neutral-700: hsl(var(--neutral-700));
+  --color-neutral-900: hsl(var(--neutral-900));
+  --_color-neutral-0: hsl(45 29% 97%);
+  --_color-neutral-100: hsl(45 15% 88%);
+  --_color-neutral-200: hsl(45 10% 75%);
+  --_color-neutral-500: hsl(45 8% 45%);
+  --_color-neutral-700: hsl(45 10% 25%);
+  --_color-neutral-900: hsl(45 15% 10%);
+
+  --color-primary-700: hsl(var(--primary-700));
+  --color-primary-600: hsl(var(--primary-600)); /* main */
+  --color-primary-500: hsl(var(--primary-500));
+  --color-primary-400: hsl(var(--primary-400));
+  --color-primary-300: hsl(var(--primary-300));
+  --_color-primary-700: hsl(197 94% 10%);
+  --_color-primary-600: hsl(197 94% 13%); /* main */
+  --_color-primary-500: hsl(197 80% 25%);
+  --_color-primary-400: hsl(197 70% 40%);
+  --_color-primary-300: hsl(169 60% 65%);
+
+  --color-secondary-600: hsl(var(--secondary-600)); /* main */
+  --color-secondary-500: hsl(var(--secondary-500));
+  --color-secondary-400: hsl(var(--secondary-400));
+  --color-secondary-300: hsl(var(--secondary-300));
+  --_color-secondary-600: hsl(169 82% 28%); /* main */
+  --_color-secondary-500: hsl(169 70% 38%);
+  --_color-secondary-400: hsl(169 65% 50%);
+  --_color-secondary-300: hsl(169 60% 65%);
+
+  --color-accent-200: hsl(var(--accent-200));
+  --color-accent-300: hsl(var(--accent-300));
+  --color-accent-400: hsl(var(--accent-400));
+  --color-accent-500: hsl(var(--accent-500)); /* main */
+  --color-accent-600: hsl(var(--accent-600));
+  --color-accent-700: hsl(var(--accent-700));
+  --_color-accent-200: hsl(30 95% 80%);
+  --_color-accent-300: hsl(30 92% 70%);
+  --_color-accent-400: hsl(30 90% 60%);
+  --_color-accent-500: hsl(30 90% 55%); /* main */
+  --_color-accent-600: hsl(30 85% 48%);
+  --_color-accent-700: hsl(30 80% 40%);
+
+  --breakpoint-tablet: 48rem;
+  --breakpoint-laptop: 64rem;
+
+  --font-logo: "Logo";
+}
+
+:root {
+  --side-space: 1rem;
+
+  --neutral-0: 45 29% 97%;
+  --neutral-100: 45 15% 88%;
+  --neutral-200: 45 10% 75%;
+  --neutral-500: 45 8% 45%;
+  --neutral-700: 45 10% 25%;
+  --neutral-900: 45 15% 10%;
+
+  --primary-700: 197 94% 10%;
+  --primary-600: 197 94% 13%;
+  --primary-500: 197 80% 25%;
+  --primary-400: 197 70% 40%;
+  --primary-300: 197 65% 60%;
+
+  --secondary-600: 169 82% 28%;
+  --secondary-500: 169 70% 38%;
+  --secondary-400: 169 65% 50%;
+  --secondary-300: 169 60% 65%;
+
+  --accent-200: 30 95% 80%;
+  --accent-300: 30 92% 70%;
+  --accent-400: 30 90% 60%;
+  --accent-500: 30 90% 55%;
+  --accent-600: 30 85% 48%;
+  --accent-700: 30 80% 40%;
+
+  --text-small: calc(12 / 16 * 1rem);
+  --text-body: calc(14 / 16 * 1rem);
+  --text-h3: calc(18 / 16 * 1rem);
+  --text-h2: calc(20 / 16 * 1rem);
+  --text-h1: calc(24 / 16 * 1rem);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --text-small: calc(14 / 16 * 1rem);
+    --text-body: calc(16 / 16 * 1rem);
+    --text-h3: calc(20 / 16 * 1rem);
+    --text-h2: calc(24 / 16 * 1rem);
+    --text-h1: calc(32 / 16 * 1rem);
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --text-small: calc(14 / 16 * 1rem);
+    --text-body: calc(18 / 16 * 1rem);
+    --text-h3: calc(22 / 16 * 1rem);
+    --text-h2: calc(28 / 16 * 1rem);
+    --text-h1: calc(40 / 16 * 1rem);
+  }
+}
+
+@layer base {
+  h1 {
+    font-size: var(--text-h1);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: var(--text-h2);
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: var(--text-h3);
+    font-weight: 600;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.3;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    font-size: var(--text-body);
+    line-height: 1.6;
+
+    background-color: hsl(var(--primary-600));
+    color: hsl(var(--neutral-0));
+  }
+
+  button {
+    cursor: pointer;
+    font-size: var(--text-small);
+  }
+
+  p {
+    max-width: calc(600 / 16 * 1rem);
+  }
+}
+
+@layer utilities {
+  .wrapper {
+    width: min(100% - var(--side-space), 90rem);
+    margin-inline: auto;
+  }
+}
