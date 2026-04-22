@@ -40,7 +40,7 @@ export default function URLInput({ initialURL = "" }) {
         />
         <input
           defaultValue={url}
-          className="p-5 w-full outline-0 text-xl font-medium"
+          className="p-5 w-full outline-0 font-medium"
           placeholder={"Enter your URL"}
           autoComplete="off"
           type="url"
