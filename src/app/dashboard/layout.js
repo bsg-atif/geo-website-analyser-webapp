@@ -1,4 +1,4 @@
-import Sidebar from "@pages/dashboard/components/sidebar/Sidebar";
+import Sidebar from "@pages/dashboard/sections/Sidebar";
 
 export default function Layout({ children }) {
   return (
