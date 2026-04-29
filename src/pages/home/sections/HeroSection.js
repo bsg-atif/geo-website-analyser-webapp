@@ -5,9 +5,9 @@ import { HERO_CONTENT } from "@constants/home/hero-content";
 export default function HeroSection() {
   return (
     <main
-      className={`wrapper relative ${styles.section} grow flex justify-center items-center`}
+      className={`wrapper relative ${styles.section} grow flex items-center`}
     >
-      <section className="flex flex-col gap-y-7 items-center">
+      <section className="flex flex-col gap-y-7 items-center w-full">
         <h1 className="whitespace-pre-line text-4xl tablet:text-5xl laptop:text-7xl text-center font-black text-transparent bg-clip-text bg-linear-to-r from-neutral-0 to-secondary-300">
           {HERO_CONTENT.title}
         </h1>

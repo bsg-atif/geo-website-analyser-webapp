@@ -11,6 +11,6 @@ export const sideBarNavLinks = [
     id: "chat",
     Icon: MessageSquare,
     label: "Chat with AI",
-    href: "/chat",
+    href: "/dashboard/chat",
   },
 ];

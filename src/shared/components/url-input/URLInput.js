@@ -17,7 +17,6 @@ export default function URLInput({ initialURL = "" }) {
     const params = new URLSearchParams();
     params.set("url", url);
 
-    console.log(url);
     return router.push(`/dashboard?${params.toString()}`);
   };
 
