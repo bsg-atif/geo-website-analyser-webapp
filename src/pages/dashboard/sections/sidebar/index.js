@@ -3,8 +3,8 @@
 import BrandLogo from "@shared/components/branding/BrandLogo";
 import { useState } from "react";
 import { sideBarNavLinks } from "@constants/sidebar/sidebar-nav-links";
-import SidebarNav from "../components/sidebar/SidebarNav";
-import ChevronButtonRenderer from "../components/sidebar/ChevronButtonRenderer";
+import ChevronButtonRenderer from "@pages/dashboard/components/sidebar/ChevronButtonRenderer";
+import SidebarNav from "@pages/dashboard/components/sidebar/SideBarNav";
 
 export default function Sidebar() {
   const [isExpanded, setIsExpanded] = useState(false);
