@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Analyse any website",
+  title: "WaledAnalysis",
   description:
     "An AI-powered webapp used to analyse the quality and provide metrics of a website",
 };

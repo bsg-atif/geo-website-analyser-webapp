@@ -8,7 +8,7 @@ export default function BrandLogo({
 }) {
   return (
     <Link
-      className={`font-logo text-lg flex gap-x-2 items-center  ${className}`}
+      className={`${className} font-logo text-lg flex items-center`}
       href="/"
     >
       <Logo

@@ -1,6 +1,10 @@
 import { ChevronFirst, ChevronLast } from "lucide-react";
 
-export default function ChevronButtonRenderer({ isExpanded, setIsExpanded }) {
+export default function ChevronButtonRenderer({
+  size,
+  isExpanded,
+  setIsExpanded,
+}) {
   return (
     <button
       className="rounded-md border border-accent-500 p-1"
@@ -8,13 +12,13 @@ export default function ChevronButtonRenderer({ isExpanded, setIsExpanded }) {
     >
       {isExpanded ? (
         <ChevronFirst
-          size={25}
+          size={size}
           strokeWidth={2}
           color="var(--color-accent-500)"
         />
       ) : (
         <ChevronLast
-          size={25}
+          size={size}
           strokeWidth={2}
           color="var(--color-accent-500)"
         />
