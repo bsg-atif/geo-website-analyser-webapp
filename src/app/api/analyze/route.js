@@ -29,7 +29,7 @@ const ANALYSIS_PROFILES = {
     },
   ],
 
-  "https://example.com": [
+  "http://example.com": [
     {
       overallScore: 84,
       status: "Great",

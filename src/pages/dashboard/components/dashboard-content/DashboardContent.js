@@ -1,5 +1,7 @@
 "use client";
 
+import Findings from "@pages/dashboard/sections/findings/Findings";
+import Recommendation from "@pages/dashboard/sections/recommendations/Recommendation";
 import ScoreCards from "@pages/dashboard/sections/score-cards";
 import Summary from "@pages/dashboard/sections/summary";
 import DashboardErrorState from "@pages/dashboard/states/DashboardErrorState";
@@ -41,6 +43,13 @@ export default function DashboardContent({ url }) {
     <>
       <Summary data={data} />
       <ScoreCards data={data.scores} />
+      <section className="grid grid-cols-1 laptop:grid-cols-2 mt-10">
+        <Findings title={"UI/UX Issues"} issues={[1, 2, 3]} />
+        <Findings title={"Performance Issues"} issues={[1, 2, 3, 4]} />
+        <Findings title={"Accessibility Issues"} issues={[1]} />
+        <Findings title={"Conversion Opportunities"} issues={[1, 2]} />
+      </section>
+      <Recommendation />
     </>
   );
 }

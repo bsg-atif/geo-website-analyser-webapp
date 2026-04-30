@@ -164,4 +164,11 @@
     width: min(100% - var(--side-space), 90rem);
     margin-inline: auto;
   }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
 }

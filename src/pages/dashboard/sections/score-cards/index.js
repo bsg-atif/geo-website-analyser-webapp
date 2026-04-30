@@ -1,4 +1,3 @@
-import scoreCards from "@constants/dashboard/scoreCards";
 import ScoreCard from "../../components/score-card";
 import styles from "./score-cards.module.css";
 
