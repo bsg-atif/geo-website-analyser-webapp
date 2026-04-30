@@ -3,7 +3,7 @@
 import useIsMobile from "@shared/hooks/useIsMobile";
 import { useEffect, useState } from "react";
 
-export default function OverallScoreCard({ score = 78 }) {
+export default function OverallScoreCard({ score }) {
   const [animatedScore, setAnimatedScore] = useState(0);
   const isMobile = useIsMobile();
 
