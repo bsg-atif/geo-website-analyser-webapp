@@ -1,7 +1,7 @@
 const ALLOWED_URLS = [
   "http://abc.com",
-  "https://example.com",
-  "http://connectqagents.com",
+  "http://example.com",
+  "http://conneqtedagents.com",
 ];
 
 const ANALYSIS_PROFILES = {
@@ -73,14 +73,35 @@ function randomizeScore(score) {
   return Math.max(0, Math.min(100, score + offset));
 }
 
+const SCORE_META = {
+  ux: {
+    title: "UI/UX",
+    description: "Visual design and user experience quality",
+  },
+  performance: {
+    title: "Performance",
+    description: "Page load speed and optimization",
+  },
+  accessibility: {
+    title: "Accessibility",
+    description: "Inclusive design and WCAG compliance",
+  },
+  conversion: {
+    title: "Conversion Score",
+    description: "SEO and conversion optimization",
+  },
+};
+
 function formatScores(scores) {
   return Object.entries(scores).map(([id, score]) => ({
     id,
+    title: SCORE_META[id].title,
+    description: SCORE_META[id].description,
     score: randomizeScore(score),
   }));
 }
 
-export async function GET(request) {
+export async function POST(request) {
   const { url } = await request.json();
 
   await new Promise((resolve) => setTimeout(resolve, 800));
@@ -96,7 +117,7 @@ export async function GET(request) {
     return Response.json(
       {
         message:
-          "This demo only supports http://abc.com, https://example.com, and http://connectqagents.com.",
+          "This demo only supports http://abc.com, https://example.com, and http://conneqtedagents.com.",
       },
       { status: 400 },
     );
