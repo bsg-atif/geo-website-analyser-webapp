@@ -4,7 +4,7 @@ export default function Summary({ data }) {
   return (
     <section className="flex flex-wrap justify-around gap-3 rounded-2xl mt-10 bg-secondary-300/5 p-5">
       <div className="">
-        <OverallScoreCard score={data.overallScore} />
+        <OverallScoreCard score={data.overallScore} status={data.status} />
       </div>
       <div className="flex flex-col gap-y-5">
         <div className="flex flex-col items-center laptop:items-stretch">

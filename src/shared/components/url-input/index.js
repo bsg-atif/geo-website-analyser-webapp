@@ -1,7 +1,7 @@
 "use client";
 
 import { MoveRight, Link as URL } from "lucide-react";
-import styles from "./URLInput.module.css";
+import styles from "./url-input.module.css";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -38,7 +38,7 @@ export default function URLInput({ initialURL = "" }) {
         />
         <input
           defaultValue={url}
-          className="p-5 w-full outline-0 font-medium"
+          className="p-5 w-full outline-0 font-medium text-xl"
           placeholder={"Enter your URL"}
           autoComplete="off"
           type="url"

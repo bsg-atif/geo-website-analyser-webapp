@@ -1,3 +1,5 @@
+import ProgressBar from "./progress-bar";
+
 export default function ScoreCard({ title, score, description }) {
   return (
     <article className="border border-secondary-600 rounded-4xl py-5 px-4 space-y-10 bg-secondary-300/5">
@@ -12,12 +14,7 @@ export default function ScoreCard({ title, score, description }) {
           {/* <card.Icon size={35} /> */}
         </div>
       </div>
-      <div className="rounded-full bg-secondary-600/20">
-        <div
-          style={{ width: `${score}%` }}
-          className="rounded-full h-5 bg-accent-300"
-        />
-      </div>
+      <ProgressBar score={score} />
       <p className="text-sm opacity-40">{description}</p>
     </article>
   );

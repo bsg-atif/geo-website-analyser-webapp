@@ -1,4 +1,4 @@
-import FindingsCard from "@pages/dashboard/components/findings-card/FindingsCard";
+import FindingsCard from "@pages/dashboard/components/findings-card";
 import { Palette } from "lucide-react";
 
 export default function Findings({ title, issues }) {
@@ -14,8 +14,15 @@ export default function Findings({ title, issues }) {
         </span>
       </div>
       <ul className="flex flex-col gap-y-3 py-3">
-        {issues.map((_, i) => (
-          <FindingsCard key={i} />
+        {issues.map((item, i) => (
+          <FindingsCard
+            key={i}
+            title={item.title}
+            description={item.description}
+            detail={item.details}
+            recommendation={item.recommendation}
+            severity={item.severity}
+          />
         ))}
       </ul>
     </article>

@@ -1,9 +1,10 @@
 "use client";
 
-import useIsMobile from "@shared/hooks/useIsMobile";
+import useIsMobile from "@shared/hooks/use-is-mobile";
 import { useEffect, useState } from "react";
+import StatusIndicator from "../status-indicator";
 
-export default function OverallScoreCard({ score }) {
+export default function OverallScoreCard({ score, status }) {
   const [animatedScore, setAnimatedScore] = useState(0);
   const isMobile = useIsMobile();
 
@@ -92,11 +93,7 @@ export default function OverallScoreCard({ score }) {
         </div>
       </div>
 
-      <div className="p-3 text-center">
-        <span className="inline-block w-full p-3 bg-accent-500 text-center font-bold text-xl rounded-md text-neutral-900">
-          Good
-        </span>
-      </div>
+      <StatusIndicator status={status} />
     </div>
   );
 }

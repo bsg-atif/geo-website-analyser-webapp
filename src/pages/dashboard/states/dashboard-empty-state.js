@@ -1,4 +1,4 @@
-import GradientHeading from "@shared/components/GradientHeading";
+import GradientHeading from "@shared/components/gradient-heading";
 import { MoveDown, MoveRight, Search, Sparkles, Zap } from "lucide-react";
 
 export default function DashboardEmptyState() {

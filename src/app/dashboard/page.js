@@ -1,14 +1,13 @@
-import DashboardContent from "@pages/dashboard/components/dashboard-content/DashboardContent";
-import DashboardEmptyState from "@pages/dashboard/states/DashboardEmptyState";
-import URLInput from "@shared/components/url-input/URLInput";
+import DashboardContent from "@pages/dashboard/components/dashboard-content";
+import DashboardEmptyState from "@pages/dashboard/states/dashboard-empty-state";
+import URLInput from "@shared/components/url-input";
 
 export const metadata = {
-  title: "Dashboard",
+  title: "Dashboard | WaledAnalysis",
 };
 
 export default async function DashboardPage({ searchParams }) {
   const { url } = await searchParams;
-  console.log(url);
 
   return (
     <main className="px-2 tablet:px-3">

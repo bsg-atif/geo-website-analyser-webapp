@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ReactQueryClientProvider from "@shared/components/providers/ReactQueryProvider";
+import ReactQueryClientProvider from "@shared/components/providers/react-query-provider";
 
 const inter = Inter({
   variable: "--font-inter",

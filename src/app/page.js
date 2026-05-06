@@ -1,5 +1,5 @@
 import HeroSection from "@pages/home/sections/hero";
-import Header from "@shared/components/Header";
+import Header from "@shared/components/header";
 
 export default function HomePage() {
   return (
