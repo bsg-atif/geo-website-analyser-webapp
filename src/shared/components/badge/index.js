@@ -1,13 +1,13 @@
 const badgeStyles = {
   priority: {
-    high: "text-red-600",
-    medium: "text-accent-200",
+    high: "bg-red-600",
+    medium: "bg-accent-500 text-neutral-900",
   },
 
   severity: {
-    critical: "text-red-600",
-    warning: "text-accent-200",
-    info: "text-neutral-100",
+    critical: "bg-red-600",
+    warning: "bg-accent-500 text-neutral-900",
+    info: "bg-neutral-100 text-neutral-900",
   },
 };
 
@@ -18,7 +18,7 @@ export default function Badge({ children, type }) {
 
   return (
     <span
-      className={`inline-block rounded-full px-2 text-xs font-medium capitalize border border-current ${badgeClass}`}
+      className={`inline-block py-1 rounded-full px-2 text-[10px] font-bold capitalize text-neutral-100 ${badgeClass}`}
     >
       {children}
     </span>

@@ -12,9 +12,12 @@ export default function BrandLogo({
       href="/"
     >
       <Logo
-        className={`h-7 w-7 bg-neutral-0 rounded-md ${LogoIconClassName}`}
+        fill="var(--color-accent-400)"
+        className={`w-10 h-10 rounded-md ${LogoIconClassName} p-1 border-2 border-accent-400`}
       />
-      <span className={`${logoTextClassName} whitespace-nowrap inline-block`}>
+      <span
+        className={`${logoTextClassName} text-accent-300 whitespace-nowrap inline-block`}
+      >
         WaledAnalysis
       </span>
     </Link>

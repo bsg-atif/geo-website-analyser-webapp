@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Chat with AI",
+  title: "Chat with AI | WaledAnalysis",
 };
 
 export default function ChatPage() {

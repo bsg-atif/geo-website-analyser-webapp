@@ -1,4 +1,4 @@
-import ScoreCard from "../../components/score-card";
+import ScoreCard from "@pages/dashboard/components/score-card";
 import styles from "./score-cards.module.css";
 
 export default function ScoreCards({ data }) {

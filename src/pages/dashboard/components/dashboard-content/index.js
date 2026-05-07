@@ -1,5 +1,6 @@
 "use client";
 
+import analyzeWebsite from "@pages/dashboard/api/queries/analyze-website";
 import Findings from "@pages/dashboard/sections/findings";
 import Recommendation from "@pages/dashboard/sections/recommendations";
 import ScoreCards from "@pages/dashboard/sections/score-cards";
@@ -7,7 +8,6 @@ import Summary from "@pages/dashboard/sections/summary";
 import DashboardErrorState from "@pages/dashboard/states/dashboard-error-state";
 import DashboardLoadingState from "@pages/dashboard/states/dashboard-loading-state";
 import { useQuery } from "@tanstack/react-query";
-import analyzeWebsite from "lib/analyze-website";
 
 export default function DashboardContent({ url }) {
   const { data, isLoading, isError, error } = useQuery({

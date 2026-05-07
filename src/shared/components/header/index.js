@@ -1,4 +1,4 @@
-import BrandLogo from "./branding/brand-logo";
+import BrandLogo from "../branding/brand-logo";
 
 export default function Header() {
   return (

@@ -17,7 +17,7 @@ export default function Sidebar() {
         <BrandLogo
           className={`overflow-hidden transition-all`}
           logoTextClassName={`${isExpanded ? "w-70" : "w-0"}`}
-          LogoIconClassName={`w-10 h-10 ${!isExpanded && "tablet:hidden"}`}
+          LogoIconClassName={`${!isExpanded && "tablet:hidden"}`}
         />
         <div className="hidden tablet:block">
           <ChevronButtonRenderer
