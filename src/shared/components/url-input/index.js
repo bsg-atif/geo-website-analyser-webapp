@@ -27,7 +27,7 @@ export default function URLInput({ initialURL = "" }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`${styles.inputWrapper} py-3 px-2 w-full max-w-280 flex flex-wrap gap-x-2
+      className={`${styles.inputWrapper} py-3 px-2 w-full max-w-250 flex flex-wrap gap-x-2
            rounded-2xl`}
     >
       <div className="flex grow-2">

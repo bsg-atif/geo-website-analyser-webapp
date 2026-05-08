@@ -1,6 +1,6 @@
 import URLInput from "@shared/components/url-input";
 import styles from "./hero-section.module.css";
-import { HERO_CONTENT } from "@constants/home/hero-content";
+import { HERO_CONTENT } from "@pages/home/sections/hero/constants/hero-content";
 import GradientHeading from "@shared/components/gradient-heading";
 
 export default function HeroSection() {

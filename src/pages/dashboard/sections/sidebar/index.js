@@ -2,7 +2,7 @@
 
 import BrandLogo from "@shared/components/branding/brand-logo";
 import { useState } from "react";
-import { sideBarNavLinks } from "@constants/sidebar/sidebar-nav-links";
+import { sideBarNavLinks } from "@pages/dashboard/sections/sidebar/constants/sidebar-nav-links";
 import ChevronButtonRenderer from "@pages/dashboard/components/sidebar/chevron-button-renderer";
 import SidebarNav from "@pages/dashboard/components/sidebar/sidebar-nav";
 
