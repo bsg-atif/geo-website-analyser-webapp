@@ -2,7 +2,6 @@
 
 import Badge from "@shared/components/badge";
 import SeverityIcon from "@shared/components/severity-icon";
-import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 import DetailsAndRecommendation from "./details-recommendation";
 import DetailsButtonToggle from "./details-button-toggle";

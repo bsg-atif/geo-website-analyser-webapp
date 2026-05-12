@@ -8,11 +8,9 @@ import { useEffect, useState } from "react";
 export default function URLInput({ initialURL = "" }) {
   const [url, setURl] = useState(initialURL);
   const router = useRouter();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const formData = new FormData(e.currentTarget);
-    const url = formData.get("url");
 
     const params = new URLSearchParams();
     params.set("url", url);
@@ -37,7 +35,8 @@ export default function URLInput({ initialURL = "" }) {
           className="self-center ml-5"
         />
         <input
-          defaultValue={url}
+          value={url}
+          onChange={(e) => setURl(e.target.value)}
           className="p-5 w-full outline-0 font-medium tablet:text-xl"
           placeholder={"Enter your URL"}
           autoComplete="off"

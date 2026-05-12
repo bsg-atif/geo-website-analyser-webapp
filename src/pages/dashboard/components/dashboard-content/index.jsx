@@ -10,16 +10,10 @@ import DashboardLoadingState from "@pages/dashboard/states/dashboard-loading-sta
 import { useQuery } from "@tanstack/react-query";
 
 export default function DashboardContent({ url }) {
-  const { data, isLoading, isError, error } = useQuery({
+  const { data, isLoading, isError } = useQuery({
     queryKey: ["insights", url],
     queryFn: () => analyzeWebsite(url),
     enabled: Boolean(url),
-  });
-  console.log({
-    isLoading,
-    isError,
-    data,
-    error,
   });
 
   if (isLoading) return <DashboardLoadingState isLoading={isLoading} />;
