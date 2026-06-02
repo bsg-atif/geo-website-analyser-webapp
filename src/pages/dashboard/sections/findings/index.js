@@ -9,7 +9,7 @@ export default function Findings({ title, issues }) {
           <Palette />
           <span className="self-start">{title}</span>
         </h2>
-        <span className="inline-block text-neutral-300/60 border border-current rounded-full text-xs bg-primary-600 py-1 px-3">
+        <span className="hidden tablet:inline-block text-neutral-300/60 border border-current rounded-full text-xs bg-primary-600 py-1 px-3">
           {issues.length} items
         </span>
       </div>
